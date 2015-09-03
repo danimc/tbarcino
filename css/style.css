@@ -1104,12 +1104,22 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/gif.gif'),url('..images/intro.png');
+		background: url('images/overlay.png'), url('../images/gif.gif');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+		
 	}
+	.logo23{
+		width:250px;
+		position:inherit;
+		padding-bottom:inherit;
+		padding-top:inherit;
+		padding-left:20px;
+		z-index:1;
+	}
+	
 
 /*********************************************************************************/
 /* One                                                                           */
