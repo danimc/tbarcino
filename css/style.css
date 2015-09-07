@@ -137,7 +137,9 @@
 
 		section:last-child,
 		article:last-child {
-			margin-bottom: 0;
+	margin-bottom: 0;
+	font-family: 'Cinzel', serif;
+	font-size: 24px;
 		}
 
 		.row > section,
@@ -585,6 +587,35 @@
 				.main.style3.secondary {
 					background: #f5f6f7;
 				}
+				
+				
+					.main.style4 {
+				text-align: center;
+				padding: 1em 0 1em 0;
+			}
+
+				.main.style4 .content {
+				}
+
+					.main.style4 .content > header {
+						margin-bottom: 5em;
+					}
+
+				.main.style4.primary {
+	background-attachment: fixed;
+	background-color: #fff;
+	background-image: url(../images/one1.jpg);
+	background-repeat: no-repeat;
+				}
+			
+				.main.style4.secondary {
+					background: #39454B;
+				}
+				
+				
+				
+				
+				
 
 	/* Dark */
 
@@ -620,6 +651,7 @@
 	}
 
 		.fa.solo {
+	color: #CCCCCC;
 		}
 		
 			.fa.solo span {
@@ -1104,11 +1136,14 @@
 /*********************************************************************************/
 
 	#intro {
+		 	
 		background: url('images/overlay.png'), url('../images/gif.gif');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+		
+		
 		
 	}
 	.logo23{
@@ -1119,6 +1154,19 @@
 		padding-left:20px;
 		z-index:1;
 	}
+	.cerl
+	{
+		width:250px;
+		position: bottom left fixed;
+		z-index:2;
+		}
+		
+		.cerr
+	{
+		width:250px;
+		position: bottom right fixed;
+		z-index:2;
+		}
 	
 
 /*********************************************************************************/
@@ -1221,19 +1269,74 @@
 			}
 
 /*********************************************************************************/
+
+/*********************************************************************************/
+/* Contact                                                                       */
+/*********************************************************************************/
+
+	#contact1 {
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+	
+		#contact1 .box {
+			position: relative;
+			bottom: 0;
+			
+			-moz-transition: all 1s ease;
+			-webkit-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+			
+			-moz-transform: translateZ(0);
+			-webkit-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+		
+		#contact1.inactive {
+		}
+
+			#contact1.inactive .box {
+				bottom: -30em;
+			}
+
+/*********************************************************************************/
+
+
+
+
+
+
 /* Footer                                                                        */
 /*********************************************************************************/
 	
 	#footer {
+		font-family:'Cinzel', serif;
 		position: relative;
-		height: 5em;
-		line-height: 5em;
+		left:50px;
+		height: 10em;
+		line-height: 1em;
 		margin: 0;
 		background: #39454b;
 		color: #999;
 		color: rgba(185,186,187,0.5);
 		overflow: hidden;
 	}
+	.izq{
+		width:400px;
+		left:8px;
+		}
+		
+		.center
+		{
+			
+			width:auto;
+			left:200px;
+			
+			}
 
 		#footer a {
 			color: #999;
@@ -1425,6 +1528,9 @@
 			
 .h20{
 	text-align:center;
+	}
+.h30{
+	color:#CCC;
 	}
 /*********************************************************************************/
 /* Touch Mode                                                                    */
